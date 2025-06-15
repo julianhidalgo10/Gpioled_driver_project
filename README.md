@@ -14,6 +14,8 @@ Learn how to develop a **character driver in Linux** that interacts with embedde
 ---
 
 ## Repository structure
+
+```plaintext
 gpioled_driver_project/
 │
 ├── driver/ # Kernel module
@@ -30,8 +32,9 @@ gpioled_driver_project/
 │       └── led_off.png
 │
 └── README.md # This file
-
+```
 ---
+
 ## Requirements
 
 - Linux with kernel headers installed

@@ -7,11 +7,13 @@
 Este proyecto implementa un **módulo de kernel en Linux** para controlar un **LED físico** conectado a un pin GPIO, utilizando un **dispositivo de caracteres (/dev/gpioled)**. Se incluye además una **aplicación en espacio de usuario** (GUI) en python, para enviar comandos de encendido y apagado al LED.
 
 ---
-## 🎯 Objetivo
+## Objetivo
 Aprender a desarrollar un **driver de caracter en Linux** que interactúe con hardware embebido a través del subsistema de GPIO, y a la vez construir aplicaciones de usuario que accedan a dicho dispositivo vía operaciones `read()` y `write()`.
 ---
 
-## 📂 Estructura del repositorio
+## Estructura del repositorio
+
+```plaintext
 gpioled_driver_project/
 │
 ├── driver/ # Módulo de kernel
@@ -28,6 +30,7 @@ gpioled_driver_project/
 │ └── led_off.png
 │
 └── README_ES.md # Este archivo
+```
 
 ---
 ## Requisitos
