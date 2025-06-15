@@ -51,24 +51,31 @@ Esto genera el archivo `gpioled_driver.ko.`
 ```
 
 ### Cargar el módulo y crear el dispositivo
+
+```
 sudo insmod gpioled_driver.ko
 dmesg | grep gpioled              # Verifica mensajes del kernel
+```
 
 ### Obtener número mayor (ejemplo: 240)
-cat /proc/devices | grep gpioled
+```cat /proc/devices | grep gpioled```
 
 ### Crear nodo en /dev
+```
 sudo mknod /dev/gpioled c 240 0
 sudo chmod 666 /dev/gpioled
+```
 
 ### Aplicación en espacio de usuario
+```
 sudo apt install python3-tk
 python3 user_app/led_gui_control.py
+```
 
 ## Pruebas y resultados
 Las evidencias de encendido y apagado del LED se encuentran en la carpeta `test/`. Se puede verificar también el comportamiento del módulo usando:
 
-dmesg | tail
+```dmesg | tail```
 
 ## Autores
 Proyecto realizado por Julián Hidalgo y Santiago Pérez para el curso de Programación de Sistemas Linux Embebidos - 2025-I

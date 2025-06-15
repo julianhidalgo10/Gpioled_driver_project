@@ -52,24 +52,30 @@ make
 This generates the file `gpioled_driver.ko.`
 ```
 ### Load the module and create the device
+```
 sudo insmod gpioled_driver.ko
 dmesg | grep gpioled              # Verify kernel messages
+```
 
 ### Get major number (example: 240)
-cat /proc/devices | grep gpioled
+```cat /proc/devices | grep gpioled```
 
 ### Create node in /dev
+```
 sudo mknod /dev/gpioled c 240 0
 sudo chmod 666 /dev/gpioled
+```
 
 ### User-space application
+```
 sudo apt install python3-tk
 python3 user_app/led_gui_control.py
+```
 
 ## Tests and results
 Evidence of LED ON and OFF functionality is located in the `test/` folder. You can also verify module behavior using:
 
-dmesg | tail
+```dmesg | tail```
 
 ## Authors
 Project developed by Julián Hidalgo and Santiago Pérez for the Embedded Linux System Programming course – 2025-I
