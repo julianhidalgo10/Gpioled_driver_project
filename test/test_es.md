@@ -64,6 +64,7 @@ Las capturas de la GUI y del LED encendido/apagado se encuentran en:
 ```
 test/capturas/led_on.png
 test/capturas/led_off.png
+test/capturas/GUI.png
 ```
 
 ## Conclusión

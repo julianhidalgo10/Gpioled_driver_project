@@ -24,11 +24,14 @@ gpioled_driver_project/
 │ └── led_gui_control.py # GUI en python
 │
 ├── test/ # Evidencias y capturas de prueba
-│ ├── test_log.md
+│ ├── test_es.md
+| |── test.md
 │ └── capturas/
-│ ├── led_on.png
-│ └── led_off.png
+│     ├── led_on.png
+│     ├── led_off.png
+│     └── GUI.png
 │
+├── README.md
 └── README_ES.md # Este archivo
 ```
 
