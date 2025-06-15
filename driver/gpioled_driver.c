@@ -8,7 +8,7 @@
 
 #define DEVICE_NAME "gpioled"
 #define CLASS_NAME "gpioled_class"
-#define GPIO_LED 21  // Cambia este número si usas otro pin
+#define GPIO_LED 21  // Se cambia este pin
 
 static dev_t dev_num;
 static struct cdev gpioled_cdev;
@@ -45,7 +45,7 @@ static ssize_t device_write(struct file *file, const char __user *buffer, size_t
         gpio_set_value(GPIO_LED, 0);
         printk(KERN_INFO "GPIOLED: LED apagado\n");
     } else {
-        printk(KERN_WARNING "GPIOLED: Comando inválido\n");
+        printk(KERN_WARNING "GPIOLED: Comando invalido\n");
     }
 
     return len;
