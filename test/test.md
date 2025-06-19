@@ -8,7 +8,7 @@ This document describes the tests performed to validate the functionality of the
 
 - **Board**: Lichee RV Dock
 - **Operating System**: Linux
-- **GPIO pin used**: GPIO21
+- **GPIO pin used**: GPIO117
 - **Connected device**: LED + 220Ω resistor to GND
 
 ---
@@ -62,11 +62,11 @@ The module unloads without errors, and `dmesg` shows:
 ```GPIOLED: Module unloaded```
 
 ## Screenshots
-Screenshots of the GUI and the LED in ON/OFF state are located at:
+The GUI tests along with the LED on/off are located at:
+
 ```
 test/capturas/led_on.png
 test/capturas/led_off.png
-test/capturas/GUI.png
 ```
 
 ## Conclusion

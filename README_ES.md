@@ -16,23 +16,30 @@ Aprender a desarrollar un **driver de caracter en Linux** que interactúe con ha
 ```plaintext
 gpioled_driver_project/
 │
-├── driver/ # Módulo de kernel
-│ ├── gpioled_driver.c
-│ └── Makefile
+├── driver/                         # Módulo del kernel y archivos generados
+│   ├── gpioled_driver.c
+│   ├── gpioled_driver.ko
+│   ├── gpioled_driver.o
+│   ├── gpioled_driver.mod
+│   ├── gpioled_driver.mod.o
+│   ├── gpioled_driver.mod.c
+│   ├── Module.symvers
+│   ├── modules.order
+│   ├── Makefile
+│   └── .*.cmd                     # Archivos ocultos de compilación (*.cmd)
 │
-├── user_app/ # Aplicaciones de usuario
-│ └── led_gui_control.py # GUI en python
+├── user_app/                      # Aplicaciones en espacio de usuario
+│   └── led_gui_control.py         # Interfaz gráfica en Python (vía SSH)
 │
-├── test/ # Evidencias y capturas de prueba
-│ ├── test_es.md
-| |── test.md
-│ └── capturas/
-│     ├── led_on.png
-│     ├── led_off.png
-│     └── GUI.png
+├── test/                          # Evidencias de prueba
+│   ├── test_es.md                 # Informe en español
+│   ├── test_en.md                 # Informe en inglés
+│   └── capturas/
+│       ├── led_on.png             # LED encendido con GUI
+│       └── led_off.png            # LED apagado con GUI
 │
-├── README.md
-└── README_ES.md # Este archivo
+├── README.md                      # Versión en inglés
+└── README_ES.md                   # Versión en español (Este archivo)
 ```
 
 ---

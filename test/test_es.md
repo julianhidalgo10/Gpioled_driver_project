@@ -8,7 +8,7 @@ Este documento describe las pruebas realizadas para validar el funcionamiento de
 
 - **Placa**: Lichee RV Dock
 - **Sistema operativo**: Linux
-- **Pin GPIO utilizado**: GPIO21
+- **Pin GPIO utilizado**: GPIO117
 - **Dispositivo conectado**: LED + resistencia 220Ω a GND
 
 ---
@@ -59,12 +59,11 @@ El módulo se descarga sin errores, y el `dmesg` muestra
 ```GPIOLED: Módulo descargado```
 
 ## Capturas
-Las capturas de la GUI y del LED encendido/apagado se encuentran en:
+Las pruebas de la GUI junto con el LED encendido/apagado se encuentran en:
 
 ```
 test/capturas/led_on.png
 test/capturas/led_off.png
-test/capturas/GUI.png
 ```
 
 ## Conclusión

@@ -18,23 +18,30 @@ Learn how to develop a **character driver in Linux** that interacts with embedde
 ```plaintext
 gpioled_driver_project/
 │
-├── driver/ # Kernel module
+├── driver/                         # Kernel module and generated files
 │   ├── gpioled_driver.c
-│   └── Makefile
+│   ├── gpioled_driver.ko
+│   ├── gpioled_driver.o
+│   ├── gpioled_driver.mod
+│   ├── gpioled_driver.mod.o
+│   ├── gpioled_driver.mod.c
+│   ├── Module.symvers
+│   ├── modules.order
+│   ├── Makefile
+│   └── .*.cmd                     # Hidden build files (*.cmd)
 │
-├── user_app/ # User applications
-│   └── led_gui_control.py # Python GUI
+├── user_app/                      # User-space applications
+│   └── led_gui_control.py         # Graphical user interface (via SSH)
 │
-├── test/ # Test evidence and screenshots
-│   ├── test_es.md
-|   ├── test.md
+├── test/                          # Test evidence
+│   ├── test_es.md                 # Report in Spanish
+│   ├── test_en.md                 # Report in English
 │   └── capturas/
-│       ├── led_on.png
-│       ├── led_off.png
-│       └── GUI.png
-|
-├── README_ES.md
-└── README.md # This file
+│       ├── led_on.png             # LED ON (with GUI visible)
+│       └── led_off.png            # LED OFF (with GUI visible)
+│
+├── README.md                      # English version (This file)
+└── README_ES.md                   # Spanish version
 ```
 ---
 
