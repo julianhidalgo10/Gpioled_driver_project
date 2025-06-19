@@ -1,7 +1,7 @@
-obj -m += gpioled_driver.o
+obj-m += gpioled_driver.o
 
 all:
-	make -C /lib/modules/$(shell uname -r)/build M=$(PwD) modules
+	$(MAKE) -C /lib/modules/$(shell uname -r)/build M=$(PWD) modules
 
 clean:
-	make -C /lib/modules/$(shell uname -r)/build M=$(PwD) clean
+	$(MAKE) -C /lib/modules/$(shell uname -r)/build M=$(PWD) clean

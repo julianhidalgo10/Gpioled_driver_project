@@ -8,7 +8,7 @@
 
 #define DEVICE_NAME "gpioled"
 #define CLASS_NAME "gpioled_class"
-#define GPIO_LED 113  // PD17 - Pin físico 117
+#define GPIO_LED 117
 
 static dev_t dev_num;
 static struct cdev gpioled_cdev;
@@ -74,7 +74,7 @@ static int __init gpioled_init(void) {
         return -1;
     }
 
-    gpioled_class = class_create(THIS_MODULE, CLASS_NAME);
+    gpioled_class = class_create(CLASS_NAME);
     if (IS_ERR(gpioled_class)) {
         cdev_del(&gpioled_cdev);
         unregister_chrdev_region(dev_num, 1);

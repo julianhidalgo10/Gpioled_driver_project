@@ -1,0 +1,1 @@
+savedcmd_gpioled_driver.ko := ld -r -melf64lriscv -z noexecstack --no-warn-rwx-segments --build-id=sha1  -T /usr/src/linux-headers-6.14.0-13-generic/scripts/module.lds -o gpioled_driver.ko gpioled_driver.o gpioled_driver.mod.o .module-common.o
