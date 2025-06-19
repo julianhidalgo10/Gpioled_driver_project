@@ -8,7 +8,7 @@
 
 #define DEVICE_NAME "gpioled"
 #define CLASS_NAME "gpioled_class"
-#define GPIO_LED 21  // Se cambia este pin
+#define GPIO_LED 113  // PD17 - Pin físico 117
 
 static dev_t dev_num;
 static struct cdev gpioled_cdev;
